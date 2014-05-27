@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>My Brain is Full</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -42,6 +42,153 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
+
+				<section>
+					<h1>My Brain is Full</h1>
+					<h2>Keeping Pace with Front-end and UX Innovations</h2>
+				</section>
+
+				<section>
+					<h2>David Hwang</h2><h3>@eatings</h3>
+					<h2>Brian Wald </h2><h3>@bcwald</h3>
+				</section>
+
+				<section>
+					<h3>Acquia, Inc.</h3>
+				</section>
+
+				<section>
+					<h3>Front-end developers are expected to know a lot.</h3>
+				</section>
+
+				<section>
+					<h2>No, really. A LOT.</h2>
+				</section>
+
+				<section>
+					<blockquote>"It is time to come clean: Github is confusing, Git is confusinger, pretty much everything in a modern web stack no longer makes sense to me, and no one explains it well, because they assume I know some fundamental piece of information that everyone takes for granted and no one documented, almost as if it were a secret that spread around to most everyone some time in 2012, yet I some how missed, because—you know—life was happening to me, so I’ve given up on trying to understand, even the parts where I try to comprehend what everyone else is working on that warrants that kind of complexity, and now I fear that this makes me irrelevant, so I nestle close to my story that my value is my “ideas” and capability to “make sense of things,” even though I can’t make sense of any of the above—but really, maybe I’m doing okay, since it’s all too much to know. Let the kids have it."</blockquote>
+					<h4>Frank Chimero, May 3 2014</h4>
+				</section>
+
+				<section>
+					<h2>How did we get here?</h2>
+				</section>
+
+				<section>
+					<h2>A (Relatively Short) History</h2>
+				</section>
+
+				<section>
+					<img src="images/d7alpha.png">
+					<h2>Drupal 7.x-alpha1</h2> <h3>released Jan 15, 2010</h3>
+				</section>
+
+				<section>
+					<img src="images/dcsf.png">
+					<h2>Drupalcon SF, April 2010</h2>
+				</section>
+
+				<section>
+					<h2>State of the web</h2>
+				</section>
+
+				<section>
+					<h2>IE8/7/6 had 56% market share</h2>
+					<h4>Mobile had less than 2% </h4>
+				</section>
+
+				<section>
+					<h2>Everybody loved Static CSS Grid Frameworks</h2>
+				</section>
+
+				<section>
+					<img src="images/blueprintcss.jpg">
+					<h3>BlueprintCSS</h3>
+				</section>
+
+				<section>
+					<img src="images/960gs.gif">
+					<h3>960gs</h3>
+				</section>
+
+				<section>
+					<h2>Competing Javascript libraries</h2>
+				</section>
+
+				<section>
+					<img src="images/jsframeworks.png">
+					<h3>This was still actively debated</h3>
+				</section>
+
+				<section>
+					<h3>The need for front-end devs to learn version control was still
+						actively debated</h3>
+				</section>
+
+<section>
+	<h3>The ability to maybe possibly use CSS3 spec was a major point of contention.
+</section>
+
+<section>
+	<h2>Drupal Front-end</h2>
+</section>
+
+<section>
+	<h2>Your were a 'Themer'</h2>
+	<p>Your title may be something fancy, but this is how people described you.
+	Maybe this is how you described yourself.</p>
+</section>
+
+<section>
+	<img src="images/mqd6.png">
+	<h3>This was your media query</h3>
+</section>
+
+<section>
+	<pre><code>#sidebar-right .view-block .views-row .first > div label h2 { color: #a3d001; }</code></pre>
+	<h3>This was your stylesheet</h3>
+</section>
+
+<section>
+	<img src="images/psd-to-html.png">
+	<h3>This was your job.</h3>
+</section>
+
+<section>
+	<img src="images/web20ex3.jpg">
+	<h3>To make sites that looked like this</h3>
+</section>
+
+<section>
+	<img src="images/web20ex2.jpg">
+	<h3>or this</h3>
+</section>
+
+<section>
+	<img src="images/web20ex1.jpg">
+	<h3>or this.</h3>
+</section>
+
+<section>
+	<h2>So what happened?</h2>
+</section>
+
+<section>
+	<h2>HTML5 & CSS3 happened</h2>
+</section>
+
+<section>
+	<img src="images/browser.png">
+	<h3>IE dying helped a lot, too</h3>
+</section>
+
+				<section>
+					<h2></h2>
+				</section>
+
+
+
 				<section>
 					<h1>Reveal.js</h1>
 					<h3>HTML Presentations Made Easy</h3>
@@ -370,8 +517,9 @@ function linkify( selector ) {
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				theme: 'night',
+
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
@@ -380,8 +528,8 @@ function linkify( selector ) {
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
