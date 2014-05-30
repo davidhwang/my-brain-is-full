@@ -109,6 +109,33 @@ module.exports = function(grunt) {
 
 	});
 
+grunt.initConfig({
+
+    'http-server': {
+
+        'dev': {
+
+            // the server root directory
+            root: "",
+
+            port: 8888,
+            // port: function() { return 8282; }
+
+            host: "127.0.0.1",
+            showDir : true,
+            autoIndex: true,
+            defaultExt: "html",
+
+            // run in parallel with other tasks
+            runInBackground: false
+
+        }
+
+    }
+});
+
+grunt.loadNpmTasks('grunt-http-server');
+
 	// Dependencies
 	grunt.loadNpmTasks( 'grunt-contrib-qunit' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
