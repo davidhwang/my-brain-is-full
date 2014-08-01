@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://daringfireball.net/2014/06/wwdc_2014_prelude -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Daring Fireball: WWDC 2014 Prelude</title>
+
+	<meta name="viewport" content="width=600, initial-scale=0.5, minimum-scale=0.45">	<link rel="apple-touch-icon-precomposed" href="http://daringfireball.net/graphics/apple-touch-icon.png">
+	<link rel="shortcut icon" href="http://daringfireball.net/graphics/favicon.ico?v=005">
+	<link rel="stylesheet" type="text/css" media="screen" href="./ans_files/fireball_screen.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="./ans_files/ie_sucks.php">
+	<link rel="stylesheet" type="text/css" media="print" href="./ans_files/fireball_print.css">
+	<link rel="alternate" type="application/atom+xml" href="http://daringfireball.net/feeds/main">
+	<script type="text/javascript" src="./ans_files/saved_resource" async=""></script><script type="text/javascript" async="" src="./ans_files/ga.js"></script><script src="./ans_files/FancyZoom.js" type="text/javascript"></script><style type="text/css"></style>
+	<script src="./ans_files/FancyZoomHTML.js" type="text/javascript"></script>
+	<link rel="home" href="http://daringfireball.net/" title="Home">
+	<link rel="shorturl" href="http://df4.us/mta">
+	<link rel="prev" href="http://daringfireball.net/2014/05/daringfireball_twitter_tweaks" title="Some Tweaks to the @daringfireball Twitter Account">
+	
+<script type="text/javascript" src="./ans_files/saved_resource(1)"></script></head>
+
+<body onload="setupZoom()"><div id="ZoomSpin" style="position: absolute; left: 10px; top: 10px; visibility: hidden; z-index: 525;"><img id="SpinImage" src="./ans_files/zoom-spin-1.png"></div><div id="ZoomBox" style="position: absolute; left: 10px; top: 10px; visibility: hidden; z-index: 499;"><img src="./ans_files/spacer.gif" id="ZoomImage" border="0" style="-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 5px 25px; display: block; width: 10px; height: 10px; cursor: pointer;"><div id="ZoomClose" style="position: absolute; left: -15px; top: -15px; visibility: hidden;"><img src="./ans_files/closebox.png" width="30" height="30" border="0" style="cursor: pointer;"></div></div><div id="ZoomCapDiv" style="position: absolute; visibility: hidden; margin-left: auto; margin-right: auto; z-index: 501;"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td align="right"><img src="./ans_files/zoom-caption-l.png" width="13" height="26" style="display: block;"></td><td background="./ans_files/zoom-caption-fill.png" id="ZoomCaption" valign="middle" style="font-size: 14px; font-family: Helvetica; font-weight: bold; color: rgb(255, 255, 255); text-shadow: rgb(0, 0, 0) 0px 2px 4px; white-space: nowrap;"></td><td><img src="./ans_files/zoom-caption-r.png" width="13" height="26" style="display: block;"></td></tr></tbody></table></div>
+<div id="Box">
+<div id="Banner">
+<a href="http://daringfireball.net/" title="Daring Fireball: Home"><img src="./ans_files/saved_resource(2)" alt="Daring Fireball" height="56"></a>
+</div>
+<div id="Sidebar">
+<p>By <strong>John&nbsp;Gruber</strong></p>
+
+<ul><!--&#9733;-->
+<li><a href="http://daringfireball.net/archive/" title="Previous articles.">Archive</a></li>
+<!-- 
+<li><a href="/shirts" title="Buy some swell t-shirts.">T-Shirts</a></li>
+ -->
+<li><script type="text/javascript">
+// <![CDATA[
+function ReadCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+var display_linked_list = ReadCookie('displayLinkedList');
+var li_linked = '<a href="/linked/" title="The Linked List.">Linked List<\/a>';
+if (display_linked_list == "hide") {
+	// Linked List is off on home page, so show it in menu:
+	document.write(li_linked + "<\/li>\n<li>");
+}
+else {
+	// Default to not putting separate LL item in sidebar:
+}
+// ]]>
+</script></li>
+<!-- 
+<li><a href="/shirts" title="The world’s finest t-shirts.">T-Shirts</a></li>
+ -->
+<li><a href="http://daringfireball.net/thetalkshow/" title="The world’s most popular podcast.">The Talk Show</a></li>
+<li><a href="http://daringfireball.net/projects/" title="Software projects, including SmartyPants and Markdown.">Projects</a></li>
+<li><a href="http://daringfireball.net/contact/" title="How to send email regarding Daring Fireball.">Contact</a></li>
+<li><a href="http://daringfireball.net/colophon/" title="About this site and the tools used to produce it.">Colophon</a></li>
+<li><a href="http://daringfireball.net/feeds/">RSS Feed</a></li>
+<li><a href="https://twitter.com/daringfireball">Twitter</a></li>
+<li><a href="http://daringfireball.net/feeds/sponsors/">Sponsorship</a></li>
+</ul>
+
+<div id="SidebarTheDeck">
+<script type="text/javascript">
+// <![CDATA[
+	(function(id) {
+		document.write('<script type="text/javascript" src="' +
+			'http://connect.decknetwork.net/deck' + id + '_js.php?' +
+			(new Date().getTime()) + '"></' + 'script>');
+	})("DF");
+	var deckDiv = document.getElementById("SidebarTheDeck");
+	var sidebarDiv = document.getElementById("Sidebar");
+	sidebarDiv.appendChild(deckDiv);
+// ]]>
+</script><script type="text/javascript" src="http://connect.decknetwork.net/deckDF_js.php?1401941609526"></script>
+
+<p id="ViaTheDeck"><a href="http://decknetwork.net/">
+<img src="./ans_files/via_the_deck.png" alt="Ads via The Deck" class="the_deck_promo" width="70">
+<span>Ads via The Deck</span>
+</a></p>
+
+</div></div> <!-- Sidebar -->
+
+<div id="Main">
+
+<div class="article">
+<h1>WWDC 2014 Prelude</h1>
+<h6 class="dateline">Sunday, 1 June 2014</h6>
+
+<h2>Beats</h2>
+
+<p>The commentary leading up to WWDC this year has been largely dominated by Apple’s $3 billion acquisition of Beats Electronics and Beats Music. <a href="http://daringfireball.net/linked/2014/05/08/beats">I didn’t get it at first</a>, that’s for sure. But the truth is, I don’t think there is much to get.</p>
+
+<p>A wholly-owned subsidiary with an independent brand is new territory for Apple. (Yes, there is Filemaker, but Filemaker is ancient history and small potatoes. Apple’s ownership/stewardship of Filemaker offers us nothing in terms of predicting how they will oversee Beats.) But so what?</p>
+
+<p>I think for the most part, Apple’s publicly stated reasons for buying Beats are the actual reasons they did it:</p>
+
+<ul>
+<li><p>It was easier to buy Beats’s streaming music service than to build a new one, and the Beats brand gives Apple cover to offer the service on non-Apple platforms like Android. The iTunes desktop app runs on Windows, but that’s an historical anomaly at this point — the i<em>Whatever</em> brands are of Apple, by Apple, and for Apple users. “Beats” can be for everyone without diluting the Apple platform centricity of the iTunes brand.</p></li>
+<li><p>They wanted to hire Jimmy Iovine. Apple needs to make more deals with the entertainment industry, and by all accounts, having Iovine on team Apple will help.</p></li>
+<li><p>Beats Electronics’s headphone and speaker business is profitable; Tim Cook told Recode:</p>
+
+<blockquote>
+  <p>Financially, it’s great, because even in the short term there are
+synergies. Using Apple’s global footprint, there’s hitting the gas
+on the subscription service, there’s distributing the headphones
+globally in countries that they’re not in today. There’s lots of
+things like that.</p>
+
+<p>So we’re projecting it’s going to be accretive in fiscal year
+2015, which as you know for us, only starts in a few months.</p>
+</blockquote></li>
+</ul>
+
+<p>My concern isn’t that Beats is a bad fit for Apple, but rather that it might be a sign of lessening focus. Only time will tell if this acquisition is part of a focused plan, or the first sign that Apple has lost the ball. Me? Somehow I doubt that the same company that launched last year’s WWDC with the splendid “<a href="http://daringfireball.net/linked/2014/02/24/thousand-nos-yes">A Thousand No’s for Every Yes</a>” animated video — the closest thing we’ve seen to a mission statement from Apple since Steve Jobs’s “<a href="http://www.youtube.com/watch?v=KlI1MR-qNt8">Intersection of Technology and the Liberal Arts</a>” — has decided to change their ratio of no’s to yes’s in just one year.</p>
+
+<p>Let’s revisit this acquisition in a year. For now, I don’t think it’s worth much more thought. But there’s no getting around the fact that it’s pretty weird to see Apple buy a company that <a href="http://www.theverge.com/2013/9/27/4776318/beats-ends-htc-partnership-buys-back-stake">just six months ago was partially owned by HTC</a>.</p>
+
+<h2>Mac OS X 10.10</h2>
+
+<p>This is the thing I’m most excited about. We know that Mac OS X 10.10 is getting a visual overhaul, and we’re all pretty sure it’s largely along the lines of the iOS 7 appearance. Which is to say, stark. But I’ve seen no leaked screenshots, and no specific details of what exactly it’s going to look like or what is going to change. <a href="http://www.theverge.com/2012/5/29/3051521/tim-cook-apple-will-double-down-on-secrecy-on-products">Double-down on secrecy</a>, indeed.</p>
+
+<p>My guesses:</p>
+
+<ul>
+<li><p>Mostly white backgrounds, liberal use of translucency, key colors to indicate clickable UI controls, 3D effects to convey the layering of windows atop each other, and a strong focus on typography.</p></li>
+<li><p>Speaking of typography, I expect the system font to change for the first time since Mac OS X 10.0 back in 2001. (If you want to be pedantic, Lucida Grande has been the system font since <a href="http://en.wikipedia.org/wiki/Mac_OS_X_Public_Beta">the public beta release in 2000</a>.) Helvetica Neue is the obvious choice, since that’s what iOS uses. The wildcard would be Apple Sans (perhaps with a new name), a new typeface Apple has been designing in-house for years. (And if OS X switches to Apple Sans, maybe iOS 8 will too.) Bottom line, though, I think we’ve seen the last of Lucida Grande.</p></li>
+<li><p>Mac OS X 10.9’s icons will need an overhaul to match the rest of the UI. My guess: a unification with the iOS 7 style. Maybe with circles for the outer shape (Apple already uses many circular icons for Mac apps: App Store, Safari, Launchpad, Dashboard, iTunes, and iBooks), or maybe with the exact same round-corned square shape iOS requires. Expect much gnashing of teeth over this. Mac users and designers have strong opinions about icons — app icons are a focal point of attention for fans of old-style skeuomorphic design. A disproportionate share of the criticism regarding iOS 7 pertained specifically to its app icons.</p></li>
+<li><p>Speaking of Launchpad and Dashboard, Mac OS X is in desperate need of an overhaul of its conceptual spatial layout. Mission Control, Spaces, Launchpad, Dashboard — <em>where</em> are these things? <em>How</em> do you get to them? It’s all a confusing jumble of ideas that have been glommed together piece by piece over 15 years. There’s no better time to clean this mess up than now, similar to how last year Apple cleaned up the spatial layering of things like Notification Center and homescreen folders in iOS.</p></li>
+<li><p>As for its name, <a href="http://www.muleradio.net/thetalkshow/79/">I placed my bet on “Yosemite” back in April</a>.</p></li>
+</ul>
+
+<h2>iOS 8</h2>
+
+<p>I really don’t know what to expect with iOS 8, other than that there must be more to it than <a href="http://9to5mac.com/2014/03/17/this-is-healthbook-apples-first-major-step-into-health-fitness-tracking/">Healthbook</a>. It’s great that Apple is paying so much attention to Mac OS X this year (or at least so we all presume), but there’s no avoiding the fact that iOS is Apple’s primary platform. iOS has an order of magnitude more users than Mac OS X, iOS devices account for a vast majority of Apple’s revenue and profit, and mobile is the area where Apple faces the strongest competition.</p>
+
+<p>iOS 8 could just be a lot of little improvements — the iOS equivalent of a Leopard / Snow Leopard or Lion / Mountain Lion release — but if that’s the case, Apple must be confident that this year’s new iOS hardware will provide advertising-worthy new features.</p>
+
+<h2>New Hardware</h2>
+
+<p>I expect no new iPhones, no new iPads, and no all-new devices like watches or wristbands or whatever wearables we’re imagining. WWDC is a developer conference first, a platform for new hardware introductions only when convenient for Apple.</p>
+
+<p>An updated Apple TV seems like a possibility, even though there don’t seem to be any rumors to that effect. I say <em>maybe</em> because I’m hoping that whatever form the next major release of Apple TV takes, that it will be a developer platform with an App Store of its own. That would make sense for a WWDC introduction.</p>
+
+<p>I could see new Mac hardware being announced. A retina display iMac would be great, but I don’t think the price curve is there yet. On the portable front, the MacBook Airs were just revised a few weeks ago, so I don’t think we’ll see a major (read: retina) new version tomorrow, and the MacBook Pros have already gone retina, so anything new that Apple announces this week would likely just be a speed bump, no big whoop.</p>
+
+<p>I’d love to be proven wrong, but my gut feeling is that we might not see a single new hardware product tomorrow. It’s going to be a busy second half of 2014 for Apple on that front.</p>
+
+<h2>iCloud and Photography</h2>
+
+<p>Apple needs to boost iCloud’s storage limits. <a href="http://nikf.org/blog/peace-of-mind">Nik Fletcher said it well back in October</a>:</p>
+
+<blockquote>
+  <p>Much as Apple is offering free versions of iWork with a new iOS
+device, it’s time to stop tying backups to a storage quota and
+simply say: “We’ve got this. Your iOS device — no matter how much
+you’ve got on it — will be backed up”.</p>
+</blockquote>
+
+<p>People should not have to worry about this with their iOS devices. Apple charges a premium for larger storage capacity devices — doing away with backup quotas should be part of the value users get in exchange.</p>
+
+<p>And along those lines, I would love to see iCloud-based photo storage go unlimited. Let us store all the photos we take with our iPhones and iPads in iCloud.<sup id="fnr1-2014-06-01"><a href="http://daringfireball.net/2014/06/wwdc_2014_prelude#fn1-2014-06-01">1</a></sup></p>
+
+<p>Digital photo management remains an unsolved problem. What are we supposed to do when our iOS devices run out of space because of all the photos we’re storing on them? Apple’s solution is from the Mac-as-digital-hub era: plug your iPhone or iPad to your Mac and import your photos into iPhoto. That feels antediluvian today, in a world <a href="http://500px.com/robinjaz">where some photographers never move their photos off the iPhones on which they took them</a>.</p>
+
+<p>I’ve noted several times this past year — including <a href="http://daringfireball.net/linked/2014/05/30/jasmer">earlier this week</a> — that Apple has quietly become one of, if not <em>the</em>, largest and most important camera companies in the world. The iPhone could just as well be named the iCamera for many of us — I’d rather use an iPhone that can’t make phone calls than use one with a broken camera.</p>
+
+<p>To that end, here’s what I’d like to see: a ground up rewrite of iPhoto, designed as a client for an iCloud-centric photo library. You can keep all your photos on your Mac, but they can all be on iCloud too, and thus accessible from your iOS devices anywhere with a network connection. The goal should be to make it such that an iCloud-using iPhone or iPad user will never lose a photo because they’re lost or broken their device, nor should they ever feel the need to permanently delete photos just because they’ve run out of storage space on the device.</p>
+
+<p>Apple might as well get rid of Aperture while they’re at it, and focus on making iPhoto good enough for everyone short of true professional photographers — most of whom, I think, have settled on Adobe Lightroom. The <a href="http://www.chuqui.com/2012/06/aperture-vs-lightroom-it-is-unfortunately-an-easy-call/">writing has been on the wall</a> for a while. If Apple still sees the need to separate truly expert features from the basic features most people need, they could do something like make the new iPhoto free for all users, and sell “iPhoto Pro” as an in-app purchase.</p>
+
+<p>This way Mac users would have one system standard photo library, just like iOS users have, and third-party Mac apps could have access to it the same way they do on iOS.</p>
+
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn1-2014-06-01">
+<p>Video, in contrast to still photos, seems problematic in this regard. HD video file sizes are too big for me to suggest with a straight face that Apple allow unlimited storage for them with iCloud. So, OK, instead of unlimited storage, how about “generous storage limit for free, very high storage limits for a reasonable annual charge”.&nbsp;<a href="http://daringfireball.net/2014/06/wwdc_2014_prelude#fnr1-2014-06-01" class="footnoteBackLink" title="Jump back to footnote 1 in the text.">↩</a></p>
+</li>
+</ol>
+</div>
+
+
+
+<div id="PreviousNext">
+<table>
+<tbody><tr valign="top"><td align="right"><strong>Previous:</strong></td><td><a href="http://daringfireball.net/2014/05/daringfireball_twitter_tweaks">Some Tweaks to the @daringfireball Twitter Account</a></td></tr>
+
+</tbody></table>
+</div> <!-- PreviousNext -->
+</div> <!-- article -->
+
+<div id="Footer">
+<form id="SiteSearch" action="https://daringfireball.net/search" method="get" style="margin-bottom: 2.5em;">
+<div>
+<input name="q" type="text" value="" style="margin-right: 8px; width: 26em;">
+<input type="submit" value="Search">
+</div>
+</form>
+<p class="smallprint"><a href="http://www.amazon.com/exec/obidos/redirect?tag=daringfirebal-20&path=subst/home/home.html">Shop at Amazon.com and support Daring Fireball</a></p>
+
+<p class="smallprint">
+<a href="http://daringfireball.net/linked/" title="Recent Linked List entries and archive.">Linked List</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://daringfireball.net/preferences/" title="Customize the font size and presentation options for this web site.">Display Preferences</a><br>
+Copyright © 2002–2014 The Daring Fireball Company LLC.</p>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-593949-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- Asynchronously load Mint -->
+<script type="text/javascript">
+(function () {
+	var ma = document.createElement('script');
+	ma.type = 'text/javascript';
+	ma.src = '/mint/?js';
+	ma.async = true;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ma, s);
+})();
+</script>
+<!-- Piwik -->
+<script type="text/javascript"> 
+  //var _paq = _paq || [];
+  //_paq.push(['trackPageView']);
+  //_paq.push(['enableLinkTracking']);
+  //(function() {
+    //var u=(("https:" == document.location.protocol) ? "https" : "http") + "://daringfireball.net/skifErk9//";
+    //_paq.push(['setTrackerUrl', u+'piwik.php']);
+    //_paq.push(['setSiteId', 1]);
+    //var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    //g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  //})();
+</script>
+<noscript>&lt;p&gt;&lt;img src="http://daringfireball.net/skifErk9/piwik.php?idsite=1" style="border:0" alt="" /&gt;&lt;/p&gt;</noscript>
+<!-- End Piwik Code -->
+</div> <!-- Main -->
+
+</div> <!-- box -->
+
+
+<!-- 0.0008 seconds -->
+</body></html>
